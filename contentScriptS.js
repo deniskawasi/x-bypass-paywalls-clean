@@ -1,0 +1,1 @@
+document.addEventListener("site", function(ev) { browser.runtime.sendMessage({'request':'site','ds':ev.detail}); });
