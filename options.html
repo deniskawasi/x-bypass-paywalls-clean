@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>X-Bypass Paywalls Clean Options</title>
+  <style>
+    #bypass_sites label {
+      display: block;
+    }
+    body {
+      font-size: 100%;
+    }
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <h1>Options | <small><span id="version"></span><br><span id="version_new"></span></small></h1>
+  <br><a href="https://gitlab.com/deniskawasi/x-bypass-paywalls-clean/-/blob/master/changelog.txt" style="color:black" target="_blank">Changelog</a>
+  <div style="width:90%;">
+    Selected sites will have their cookies cleared and referer set to Google.
+    You should uncheck sites you have an account with or else you will be logged out at every visit.<br>
+    For some sites (check list) a necessary cookie has to be set; enable in opt-in.
+  </div>
+  <br>
+  <div style='float:left'>
+    <small><button><a href="options_custom.html" style="text-decoration:none;color:inherit">Custom sites</a></button></small>
+    <small><button><a href="optin/opt-in.html" style="text-decoration:none;color:inherit">Opt-in</a></button></small>
+    <small><button><a href="options_excluded.html" style="text-decoration:none;color:inherit">Excluded sites</a></button></small>
+    <small><button><a href="#save" style="text-decoration:none;color:inherit">Go to save</a></button></small>
+  </div>
+  <div style="clear:both;"></div>
+  <br>
+  <div id='bypass_sites'></div>
+  <br>
+  <div id="status"></div>
+  <div id="error"></div>
+  <span style='float:left;padding-bottom:50px'>
+    <button id="save">Save</button>
+    <button id="select-all">Select all</button>
+    <button id="select-none">Select none</button>
+    <button><a href="options_custom.html" style="text-decoration:none;color:inherit">Custom sites</a></button>
+    <button><a href="options_excluded.html" style="text-decoration:none;color:inherit">Excluded sites</a></button>
+    <button id="button-close">Close</button>
+  </span>
+  <script src="sites.js"></script>
+  <script src="options.js"></script>
+  <script src="version.js"></script>
+</body>
+</html>
